@@ -6,7 +6,7 @@
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *tmp;
-	int n;
+	int i;
 
 	if (!list)
 		return;
@@ -17,11 +17,11 @@ void insertion_sort_list(listint_t **list)
 		{
 			if (tmp->next)
 			{
-				if (tmp->n > tmp->next->n)
+				if (tmp->i > tmp->next->i)
 				{
-					n = tmp->n;
-					*(int *)&tmp->n = tmp->next->n;
-					*(int *)&tmp->next->n = n;
+					i = tmp->i;
+					*(int *)&tmp->i = tmp->next->i;
+					*(int *)&tmp->next->i = i;
 					tmp = *list;
 					print_list(*list);
 					break;
