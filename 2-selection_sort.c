@@ -15,9 +15,9 @@ void swap_ints(int *a, int *b)
 }
 
 /**
- * selection_sort - Sort an array of integers in ascending order
- *                  using the selection sort algorithm.
- * @array: An array of integers.
+ * selection_sort - Sort an array of integers in ascendingg orderr
+ *                  using the selection sort algorithhm.
+ * @array: An array of integerss.
  * @size: The size of the array.
  *
  * Description: Prints the array after each swap.
